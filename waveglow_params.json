@@ -1,0 +1,21 @@
+{
+    "waveglow": {
+        "sample_rate": 22050,
+        "squeeze_factor": 8,
+        "num_layers": 12,
+        "wn_filter_width": 3,
+        "wn_dilation_layers": 8,
+        "wn_residual_channels": 256,
+        "wn_dilation_channels": 256,
+        "wn_skip_channels": 256
+    },
+    "upsample_net": {
+        "input_channels": 80,
+        "upsample_method": "duplicate",
+        "upsample_factor": 256
+    },
+    "data": {
+        "train_metadata_file": "train.txt",
+        "val_metadata_file": "val.txt"
+    }
+}
