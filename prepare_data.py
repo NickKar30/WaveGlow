@@ -125,18 +125,18 @@ def process_dataset(audio_dir, output_dir, metadata_file, output_csv, sr=22050):
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Prepare mel-spectrograms for Tacotron2 training'
+        description='Prepare mel-spectrograms training'
     )
     parser.add_argument(
         '--audio_dir',
         type=str,
-        default='/home/jovyan/shares/SR008.fs2/nkaragodin/DATASET/audio22k',
+        default='path/to/audio/files',
         help='Directory containing audio files'
     )
     parser.add_argument(
         '--output_dir',
         type=str,
-        default='DATASET/mels_22k',
+        default='path/to/save/mel/spectrograms',
         help='Directory to save mel-spectrograms'
     )
     parser.add_argument(
@@ -147,7 +147,7 @@ def main():
     parser.add_argument(
         '--output_csv',
         type=str,
-        default='DATASET/train.csv',
+        default='path/to/output/train.csv',
         help='Path to output CSV file'
     )
     parser.add_argument(
