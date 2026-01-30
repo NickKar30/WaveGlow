@@ -25,8 +25,8 @@ The model was trained on the [Ruslan dataset](https://ruslan-corpus.github.io).
 >
 > The audio files were resampled to 22050 Hz.
 
-3. Features:
-The model uses original spectrograms derived from the dataset audio, avoiding complex feature extraction pipelines.
+3. Features & Data Preparation:
+The model uses original spectrograms derived from the dataset audio. The `prepare_data.py` script was used to generate these spectrograms for training.
 
 4. Training with default hyperparams:
 ```
